@@ -1,0 +1,28 @@
+{
+  "name": "AfroDev_API_inicial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matvb/AfroDev_API_inicial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matvb/AfroDev_API_inicial/issues"
+  },
+  "homepage": "https://github.com/matvb/AfroDev_API_inicial#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
