@@ -1,6 +1,12 @@
-const express = require('express')
+const configExpress = require("./config/configExpress");
+const conexao = require("./infra/conexao");
 
-const app = express()
+const app = configExpress();
 
-app.listen(3000, () => console.log('Servidor rodando na porta 3000'))
-
+conexao.connect((error) => {
+  if (error) {
+    throw error;
+  } else {
+    app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
+  }
+});
