@@ -85,7 +85,7 @@ class Agendamento {
                 return resp.status(400).json(error)
             }
 
-            resp.status(201).json({...agendamentoComData,
+            return resp.status(201).json({...agendamentoComData,
             id: results.insertId})
         })
     }
