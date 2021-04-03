@@ -77,12 +77,12 @@ class Agendamento {
         const errors = validacoes.filter(campo => !campo.valido)
 
         if(errors.length > 0 ){
-            resp.status(400).json(errors)
+            return resp.status(400).json(errors)
         }
 
         conexao.query(sql, agendamentoComData, (error, results) => {
             if(error) {
-                resp.status(400).json(error)
+                return resp.status(400).json(error)
             }
 
             resp.status(201).json({...agendamentoComData,
